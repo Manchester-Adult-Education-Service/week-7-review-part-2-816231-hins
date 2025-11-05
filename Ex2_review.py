@@ -26,6 +26,13 @@ print("-------------------------------------------\n"
 # Output: 7 is odd
 #
 # Write your code below:
+number=int(input("Enter a number: "))
+if number % 2 == 0:
+    print(f"{number} is even")
+else:
+    print(f"{number} is odd")   
+
+
 
 
 # -------------------------------------------
@@ -58,6 +65,13 @@ print("-------------------------------------------\n"
 # Output: Excellent!
 #
 # Write your code below:
+score = int(input("Enter your score: "))
+if score >= 70:
+    print("Excellent!")
+elif score >= 50:
+    print("Good effort!")
+else:
+    print("Needs improvement.") 
 
 
 # -------------------------------------------
@@ -95,7 +109,11 @@ print("-------------------------------------------\n"
 # Blast off!
 #
 # Write your code below:
-
+user_number = int(input("Enter a starting number: "))
+while user_number >= 1:
+    print(user_number)
+    user_number -= 1
+print("Blast off!") 
 
 # -------------------------------------------
 # Submitting Your Work
@@ -129,9 +147,14 @@ print("-------------------------------------------\n"
 # 3 x 10 = 30
 #
 # Write your code below:
+number = int(input("Enter a number: "))
+for i in range(1, 11):
+    print(f"{number} x {i} = {number * i}")
+
+    
 
 
-# -------------------------------------------
+# --------------------------------------
 # Submitting Your Work
 # -------------------------------------------
 # Once you’ve completed this exercise:
@@ -165,6 +188,15 @@ print("-------------------------------------------\n"
 # Correct! Well done.
 #
 # Write your code below:
+secret_number = 5
+guess = int(input("Enter your guess: "))   
+while guess != secret_number:
+    if guess < secret_number:
+        print("Too low!")
+    else:
+        print("Too high!")
+    guess = int(input("Enter your guess: ")) 
+print("Correct! Well done.")                    
 
 
 # -------------------------------------------
@@ -201,6 +233,11 @@ print("-------------------------------------------\n"
 # Output: The total is 19
 #
 # Write your code below:
+total=0
+for i in range(1,6):
+    usernum=int(input(f"Enter number {i}:"))
+    total+=usernum
+print(f"The total is {total}")
 
 
 
@@ -222,6 +259,13 @@ print("-------------------------------------------\n"
 # Output: Access granted!
 #
 # Write your code below:
+password="python123"
+userpswd=input("Enter the password :")
+while userpswd!=password:
+    print("Incorrect password! try again.")
+    userpswd=input("Enter the password:")
+print("Access granted!")
+
 
 
 
