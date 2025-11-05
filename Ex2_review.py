@@ -233,6 +233,11 @@ print("-------------------------------------------\n"
 # Output: The total is 19
 #
 # Write your code below:
+total=0
+for i in range(1,6):
+    usernum=int(input(f"Enter number {i}:"))
+    total+=usernum
+print(f"The total is {total}")
 
 
 
@@ -254,6 +259,13 @@ print("-------------------------------------------\n"
 # Output: Access granted!
 #
 # Write your code below:
+password="python123"
+userpswd=input("Enter the password :")
+while userpswd!=password:
+    print("Incorrect password! try again.")
+    userpswd=input("Enter the password:")
+print("Access granted!")
+
 
 
 
